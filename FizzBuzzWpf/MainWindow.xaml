@@ -1,0 +1,16 @@
+﻿<Window x:Class="FizzBuzzWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FizzBuzzWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btnFizz" Content="Fizzbuzzinator" HorizontalAlignment="Left" Margin="215,112,0,0" VerticalAlignment="Top" Width="120" Height="46" Click="btnFizz_Click"/>
+        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Height="23" Margin="215,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblInstruction" Content="Enter a numeric value:" HorizontalAlignment="Left" Margin="215,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblOutput" Content="Output:" HorizontalAlignment="Left" Margin="32,186,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
