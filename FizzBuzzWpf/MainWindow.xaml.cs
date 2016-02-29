@@ -28,6 +28,8 @@ namespace FizzBuzzWpf
         private void btnFizz_Click(object sender, RoutedEventArgs e)
         {
             FizzbuzzCalculator fizzbuzz = new FizzbuzzCalculator();
+
+            fizzbuzz.value = Convert.ToDouble(txtValue.Text);
             fizzbuzz.Fizzbuzz();
 
             lblOutput.Content = fizzbuzz.output.ToString();
