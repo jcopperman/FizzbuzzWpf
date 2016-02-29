@@ -7,8 +7,12 @@ namespace FizzBuzz.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void FirstTestMethod()
         {
+            var expected = "hello";
+            var actual = "hello";
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
