@@ -53,6 +53,12 @@
     <Compile Include="FizzBuzzUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzzWpf\FizzBuzzWpf.csproj">
+      <Project>{471c6883-0495-4a9f-b807-9945e5fb84db}</Project>
+      <Name>FizzBuzzWpf</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

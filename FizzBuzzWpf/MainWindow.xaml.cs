@@ -27,6 +27,10 @@ namespace FizzBuzzWpf
 
         private void btnFizz_Click(object sender, RoutedEventArgs e)
         {
+            FizzbuzzCalculator fizzbuzz = new FizzbuzzCalculator();
+            fizzbuzz.Fizzbuzz();
+
+            lblOutput.Content = fizzbuzz.output.ToString();
 
         }
     }
