@@ -59,7 +59,7 @@ namespace FizzBuzz.Tests
         }
 
         [TestMethod]
-        public void ForAge_Given31Return8()
+        public void ForAge_Given31_Return8()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
             calculator.value = 15;
