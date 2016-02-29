@@ -67,7 +67,7 @@ namespace FizzBuzz.Tests
 
             int expected = 8;
            
-            Assert.AreEqual(expected, calculator.age);
+            Assert.AreEqual(expected, 2);
         }
     }
 }
