@@ -57,5 +57,17 @@ namespace FizzBuzz.Tests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void ForAge_Given31Return8()
+        {
+            FizzbuzzCalculator calculator = new FizzbuzzCalculator();
+            calculator.value = 15;
+            calculator.Fizzbuzz();
+
+            int expected = 8;
+           
+            Assert.AreEqual(expected, calculator.age);
+        }
     }
 }

@@ -33,6 +33,7 @@ namespace FizzBuzzWpf
             fizzbuzz.Fizzbuzz();
 
             lblOutput.Content = fizzbuzz.output.ToString();
+            lblFizzBuzzAge.Content = fizzbuzz.age.ToString();
 
         }
     }

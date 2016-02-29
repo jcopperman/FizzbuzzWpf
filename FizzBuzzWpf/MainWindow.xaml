@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnFizz" Content="Fizzbuzzinator" HorizontalAlignment="Left" Margin="215,112,0,0" VerticalAlignment="Top" Width="120" Height="46" Click="btnFizz_Click"/>
-        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Height="23" Margin="215,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblInstruction" Content="Enter a numeric value:" HorizontalAlignment="Left" Margin="215,41,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnFizz" Content="Fizzbuzzinator" HorizontalAlignment="Left" Margin="32,125,0,0" VerticalAlignment="Top" Width="120" Height="46" Click="btnFizz_Click"/>
+        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Height="23" Margin="32,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblInstruction" Content="Enter a numeric value:" HorizontalAlignment="Left" Margin="32,29,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblOutput" Content="Output:" HorizontalAlignment="Left" Margin="32,186,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFizzBuzzAge" Content="Age in FizzBuzz years:" HorizontalAlignment="Left" Margin="237,29,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
