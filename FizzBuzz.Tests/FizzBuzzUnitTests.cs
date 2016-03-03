@@ -1,16 +1,14 @@
 ﻿using System;
 using NUnit.Framework;
 using FizzBuzzWpf;
-using TechTalk.SpecFlow;
-using TechTalk.SpecRun;
+
 
 namespace FizzBuzz.Tests
 {
     [TestFixture]
     public class FizzBuzzUnitTests
     {
-        [Test]
-        [Given(@"I have entered (.*) into the FizzBuzzApp")]
+        [Test]       
         public void Given1Return1()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
