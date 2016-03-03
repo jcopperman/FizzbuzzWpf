@@ -1,13 +1,16 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using FizzBuzzWpf;
+using TechTalk.SpecFlow;
+using TechTalk.SpecRun;
 
 namespace FizzBuzz.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class FizzBuzzUnitTests
     {
-        [TestMethod]
+        [Test]
+        [Given(@"I have entered (.*) into the FizzBuzzApp")]
         public void Given1Return1()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
@@ -20,7 +23,7 @@ namespace FizzBuzz.Tests
 
         }
 
-        [TestMethod]
+        [Test]
         public void Given3Return12Fizz()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
@@ -33,7 +36,7 @@ namespace FizzBuzz.Tests
 
         }
 
-        [TestMethod]
+        [Test]
         public void Given5Return12Fizz4Buzz()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
@@ -46,7 +49,7 @@ namespace FizzBuzz.Tests
 
         }
 
-        [TestMethod]
+        [Test]
         public void Given15ReturnFizzBuzz()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();
@@ -58,7 +61,7 @@ namespace FizzBuzz.Tests
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+        [Test]
         public void ForAge_Given31_Return8()
         {
             FizzbuzzCalculator calculator = new FizzbuzzCalculator();

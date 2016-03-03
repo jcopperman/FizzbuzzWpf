@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProfile xmlns="http://www.specrun.com/schemas/2011/09/TestProfile">
+  <Settings projectName="FizzBuzz.Tests" projectId="{fa9d5257-be21-47b2-a573-046ac894d8b5}" />
+  <Execution stopAfterFailures="3" testThreadCount="1" testSchedulingMode="Sequential" />
+  <!-- For collecting by a SpecRun server update and enable the following element. For using the 
+      collected statistics, set testSchedulingMode="Adaptive" attribute on the <Execution> element.
+    <Server serverUrl="http://specrunserver:6365" publishResults="true" />
+  -->
+  <TestAssemblyPaths>
+    <TestAssemblyPath>FizzBuzz.Tests.dll</TestAssemblyPath>
+  </TestAssemblyPaths>
+  <DeploymentTransformation>
+    <Steps>
+      <!-- sample config transform to change the connection string-->
+      <!--<ConfigFileTransformation configFile="App.config">
+        <Transformation>
+          <![CDATA[<?xml version="1.0" encoding="utf-8"?>
+							<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+                <connectionStrings>
+                  <add name="MyDatabase" connectionString="Data Source=.;Initial Catalog=MyDatabaseForTesting;Integrated Security=True" 
+                       xdt:Locator="Match(name)" xdt:Transform="SetAttributes(connectionString)" />
+                </connectionStrings>
+							</configuration>
+						]]>
+        </Transformation>
+      </ConfigFileTransformation>-->
+    </Steps>
+  </DeploymentTransformation>
+</TestProfile>
